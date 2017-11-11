@@ -76,7 +76,7 @@
         .style("magrin", "0 auto")
 
 
-  d3.csv("http://localhost:8000/nowpeace-settlements.csv", function(error, settleData){
+  d3.csv("nowpeace-settlements.csv", function(error, settleData){
 
     settleData.forEach(function(d){
       d.establishment = +d.establishment;
