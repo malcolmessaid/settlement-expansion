@@ -61,7 +61,7 @@
       .style("margin", "0 auto")
       .style("display", "block")
 
-    d3.json("http://localhost:8000/countries.geo.json", function(error, dataset){
+    d3.json("countries.geo.json", function(error, dataset){
 
       var projection = d3.geoMercator().scale(7500).center([34.5, 32]).translate([width / 2, height / 2]);
       var path = d3.geoPath().projection(projection);
